@@ -108,7 +108,11 @@ public class hw_1 {
             result = num1 - num2;
         }
         if (p == '/'){
-            result = num1 / num2;
+            if (num2 == 0){
+                System.out.println("Деление на 0 запрещено!!!");
+                System.exit(0);
+            }
+            else result = num1 / num2;
         }
         if (p == '*'){
             result = num1 * num2;
